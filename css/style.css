@@ -483,6 +483,24 @@ body {
 	border: 1px solid #e5e5e5;
 	display: flex;
 	align-items: center;
+
+	position: relative;
+}
+
+.what__title:after {
+	content: "";
+	position: absolute;	
+	display: block;
+	width: 14px;
+	height: 14px;
+	top: 55%;
+	right: 7px;
+	border-top: 3px solid #cccccc;
+	border-right: 3px solid #cccccc;
+
+	transform: translateY(-50%) rotate(-45deg);
+
+
 }
 
 .what__icon {
@@ -491,50 +509,38 @@ body {
 }
 
 .what__title-header {
-	width: 110px;
-	height: 10px;
-	margin: 10px 387px 10px 15px;
+	margin: 10px 0px 10px 0px;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 7px;
 	text-transform: uppercase;
-	text-align: left;
 	color: #333;
 	flex: 0 1 auto;
 }
-.what__arrow {
-	flex: 1 1 auto;
-	position: relative;
-}
-.what__arrow img {
-	position: absolute;
-	top: -6px;
-	right: 5px;
-	cursor: pointer;
+.what__title-header2 {
+	margin-left: 4px;
 }
 
+
+
 .scrollbar-helper {
-	padding: 20px 0px;
+	padding: 20px 0px 28px;
 	max-width: 600px;
 	max-height: 180px;
 	border: 1px solid #e5e5e5;
+	border-top: none;
 }
 
 .what__details {
 	max-width: 98%;
 	max-height: 132px;
 	overflow-y: scroll;
-
-	
-	padding: 0px 55px 0px 20px;
-	font-family: Roboto;
+	padding: 0px 25px 0px 20px;
+	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	font-stretch: normal;
 	font-style: italic;
 	line-height: 1.6;
-	letter-spacing: normal;
-	text-align: left;
 	color: #999;
 	
 }
