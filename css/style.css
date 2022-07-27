@@ -260,6 +260,7 @@ body {
 /* !about pictures */
 
 .about__row {
+	margin-top: 100px;
 	display: flex;
 	padding: 0 -15px;
 
@@ -462,7 +463,7 @@ body {
 /*  what */
 
 .what {
-	margin: 0px 0px 300px 0px;
+	margin: 0px 0px 120px 0px;
 }
 
 .what__info {
@@ -561,4 +562,156 @@ body {
 	display: none;
 }
 
+/* Quote  */
 
+.quote {
+	background-color: #f8f8f8;
+	margin-bottom: 90px;
+	height: 290px;
+}
+
+.container-sm {
+	width: 940px;
+	margin: 0 auto;
+}
+.quote__row {
+	display: flex;
+	margin: 0px -30px 0px -30px;
+	padding-top: 70px;
+	
+}
+.quote__item {
+	padding: 0px 30px;
+
+}
+
+.quote__icon {
+	padding: 45px;
+	border: 2px solid #95e1d3;
+}
+.quote__itself {
+	color: #999999;
+	width: 767px;
+	height: 96px;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.quote__author {
+	margin-left: 130px;
+	font-size: 20px;
+	position: relative;
+}
+
+.quote__author:before {
+	position: absolute;
+	left:-80px;
+	bottom: 9px;
+
+	content: "";
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+}
+
+/* team */
+
+.team {
+	margin-bottom: 300px;
+}
+
+.team__row {
+	display: flex;
+	margin: 0 -15px;
+}
+.team__item {
+	position: relative;
+	padding: 0 15px;
+}
+.team__img-wrapper:hover .team__img-bg {
+	transform: translate3d(-10px, -10px, 0);
+
+	
+	
+}
+.team__img {
+	opacity: 1;
+	transition: opacity .2s linear;
+}
+
+.team__img-wrapper:hover .team__img-bg {
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.team__img-bg {
+	transition: transform .2s linear;
+}
+
+.team__img-wrapper:hover .team__img {
+	transition: opacity .2s linear;
+	opacity: .1;
+}
+
+
+.team__icons {
+	height: 55px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 225px;
+	left: 0;
+	transform: translate3d(0, -50%, 0);
+	z-index: 2;
+
+	opacity: 0;
+
+    transition: opacity .2s linear;
+}
+
+.team__item:hover .team__icons {
+	opacity: 1;
+}
+
+
+.team__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 55px;
+	background-color: #fce38a;
+	border-left: 1px solid #f38181;
+	
+}
+
+.team__icon:first-child {
+	background-color: #f38181;
+}
+.team__img-wrapper {
+	background-color: #95e1d3;
+	
+
+}
+.team__img {
+	display: block;
+	width: 380px;
+	height: 470px;
+	overflow: hidden;
+}
+
+.team__member {
+	text-align: center;
+}
+.team__name {
+	margin: 30px 0 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.team__position {
+	letter-spacing: .1;
+	font-style: italic;
+	color: #999999;
+}
