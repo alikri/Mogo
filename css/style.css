@@ -1406,12 +1406,95 @@ body {
 		margin-top: 30px;
 	}
 
-	.team__item:first-child{
-		margin-top: 0;
-	}
 
 	.team__name {
 		margin-top: 10px;
+	}
+
+	/* logos */
+
+	.logos {
+		display: none;
+	}
+	.hr {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	
+	/* pictures */
+
+	.pictures {
+		display: none;
+	}
+
+	/* clients */
+
+	.clients__row {
+		justify-content: center;
+	}
+
+	.clients__item {
+		padding-bottom: 25px;
+	}
+
+	/* blog */
+
+	.blog__info {
+		margin-bottom: 20px;
+	}
+
+
+	.blog__row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.blog__item {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.blog__text {
+		max-width: 380px;
+		text-align: center;
+	}
+
+	.blog__header {
+		text-align: center;
+	}
+
+	.hr {
+		margin-bottom: 10px;
+	}
+
+	.blog__reviews {
+		margin-left: 20px;
+	}
+
+	/* map */
+
+	.map {
+		margin-bottom: 40px;
+	}
+
+	/* end */
+
+	.end__item {
+		margin-top: 50px;
+	}
+
+	.end__row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.end__header {
+		margin: 5px 0px 80px 5px;
+	}
+	.right__header {
+		margin-bottom: 60px;
 	}
 }
 
@@ -1480,8 +1563,7 @@ body {
 		margin-bottom: 30px;
 	} 
 
-	/* what */
-	
+
 
 }
 
@@ -1914,8 +1996,166 @@ body {
 		height: 390px;
 		overflow: hidden;
 	}
-	
 
+	/* clients */
+
+	.clients__row {
+		justify-content: center;
+	}
+
+	.clients__item {
+		padding-bottom: 40px;
+		width: 310px;
+	}
+
+	.clients__left {
+		width: 90px;
+		height: 90px;
+		overflow: hidden;
+	}
+
+	.clients__left img {
+		width: 90px;
+		height: 90px;
+	}
+	
+	.clients__name {
+		font-size: 12px;
+	}
+
+	.clients__position {
+		font-size: 12px;
+		margin-bottom: 30px;
+	}
+
+	.clients__position:after {
+		height: 2px;
+		top: 25px;
+	}
+	.clients__description {
+		font-size: 10px;
+		width: 180px;
+	}
+
+	/* blog */
+
+
+	.blog__text {
+		max-width: 300px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.blog__header {
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.hr {
+		margin-bottom: 10px;
+	}
+
+	.blog__reviews {
+		margin-left: 20px;
+		font-size: 10px;
+	}
+
+	.blog__reviews img {
+		margin-top: 2px;
+		width: 16px;
+		height: 10px;
+	}
+
+	.blog__img img {
+		width: 300px;
+		height: 160px;
+	}
+
+	.blog__date {
+		left: -6px;
+		bottom: 4px;
+		width: 40px;
+		height: 50px;
+		
+	}
+
+	.date-number {
+		font-size: 18px;
+	}
+	.date-day {
+		font-size: 12px;
+	}
+
+	/* end */
+	.end__left-logo {
+		font-size: 35px;
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+
+	.end__left-text {
+		font-size: 10px;
+		line-height: 1.85;
+	}
+
+	.end__left-followers {
+		padding-left: 20px;
+		font-size: 12px;
+	}
+
+	.followers__number {
+		font-size: 14px;
+	}
+
+	.end__follow-text {
+		font-size: 12px;
+		padding-left: 20px;
+		margin-right: 10px;
+	}
+	.left-img {
+		margin-right: 8px;
+	}
+
+	.input {
+		margin-left: 20px;
+		width: 160px;
+		height: 30px;
+	
+	}
+	.input::placeholder {
+		font-size: 12px;
+	}
+
+	.input-submit {
+		margin-left: 0;
+		width: 120px;
+		font-size: 11px;
+	}
+
+	.middle__info {
+		width: fit-content;
+	}
+	.end__header {
+		margin-left: 20px;
+	}
+	.middle__pic {
+		padding-left: 20px;
+	}
+	.right__row {
+		margin-left: 10px;
+	}
+	.right__header {
+		margin: 0px 0px 60px 12px;
+	}
+
+	.right__subtitle {
+		margin-left: 12px;
+	}
+
+	.footer__text {
+		font-size: 10px;
+		padding-top: 15px;
+	}
 }
 
 @media (max-width: 399px) {  /* !max-width: 399px */
