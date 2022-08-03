@@ -424,7 +424,7 @@ body {
 .unique {
 	margin: 0px 0px 90px 0px;
 	height: 850px;
-	background: url("../assets/images/unique-bc.png") no-repeat;
+	background: url("../assets/images/unique-bc.png") center no-repeat;
 	position: relative;
 	
 }
@@ -903,7 +903,7 @@ body {
 .clients {
 	margin: 0px 0px 100px 0px;
 	height: 830px;
-	background: url("../assets/images/clients-bg.png");
+	background: url("../assets/images/clients-bg.png") center no-repeat;
 	position: relative;
 	display: flex;
 	justify-content: center;
