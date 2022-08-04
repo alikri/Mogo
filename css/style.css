@@ -626,7 +626,7 @@ body {
 }
 
 .hide:after {
-	transform: translateY(-50%) rotate(135deg);
+	transform: translateY(-95%) rotate(135deg);
 }
 
 .what__icon {
