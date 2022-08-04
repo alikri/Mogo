@@ -20,27 +20,28 @@
 	<div class="wrapper">
 		<div class="content">
 			<div class="home">
-				<header class="header">
-					<div class="container">
+				<header id="header" class="header">
+					<div class="container container-header">
 						<div class="header__row">
 							<div class="row__logo">MoGo</div>
-							<div class="header__burger">
-								<span></span>
-							</div>
-							<div class="row__navigation">
-								<nav><a href="#">about</a>
-									<a href="#">service</a>
-									<a href="#">work</a>
-									<a href="#">blog</a>
-									<a href="#">contact</a>
+							<div id="nav" class="row__navigation">
+								<nav class="nav">
+									<a href="#about" data-scroll="#about">about</a>
+									<a href="#service" data-scroll="#service">service</a>
+									<a href="#team" data-scroll="#team">team</a>
+									<a href="#blog" data-scroll="#blog">blog</a>
+									<a href="#contact" data-scroll="#contact">contact</a>
 									<a href="#"><img src="assets/fonts/shopping_cart_871.png" alt=""></a>
 									<a href="#"><img src="assets/fonts/magnifying_glass_872.png" alt=""></a>
 								</nav>
 							</div>
+							<button id="nav-toggle" class="nav-toggle" type="button">
+								<span class="nav-toggle__item"></span>
+							</button>
 						</div>
 					</div>
 				</header>
-				<div class="intro">
+				<div id="intro" class="intro">
 					<div class="container">
 						<div class="absolute">
 							<div class="intro__row">
@@ -67,7 +68,7 @@
 					</div>
 				</div>
 			</div> <!-- .home -->
-			<div class="about">
+			<div id="about" class="about">
 				<div class="container">
 					<div class="about__info info">
 						<div class="double__title">
@@ -125,7 +126,7 @@
 					</div>
 				</div>
 			</div> <!-- .numbers -->
-			<div class="services">
+			<div  id="service" class="services">
 				<div class="container">
 					<div class="services__info info">
 						<div class="services__subtitle subtitle">We work with</div>
@@ -314,7 +315,7 @@
 					</div>
 				</div>
 			</div> <!-- .quote -->
-			<div class="team">
+			<div id="team" class="team">
 				<div class="container">
 					<div class="team__info info">
 						<div class="double__title">
@@ -482,7 +483,8 @@
 
 						<div class="pictures__small">
 							<div class="pic__inner">
-								<div class="pictures__icon pic-icon-sm"><img class="pic-img pic-sm" src="assets/images/pic2-2.png" alt="">
+								<div class="pictures__icon pic-icon-sm"><img class="pic-img pic-sm"
+										src="assets/images/pic2-2.png" alt="">
 								</div>
 								<div class="inner__details">
 									<img src="assets/fonts/pic-icon.png" alt="">
@@ -491,7 +493,8 @@
 								</div>
 							</div>
 							<div class="pic__inner">
-								<div class="pictures__icon pic-icon-sm"><img class="pic-img pic-sm" src="assets/images/pic2-3.png" alt="">
+								<div class="pictures__icon pic-icon-sm"><img class="pic-img pic-sm"
+										src="assets/images/pic2-3.png" alt="">
 								</div>
 								<div class="inner__details">
 									<img src="assets/fonts/pic-icon.png" alt="">
@@ -579,7 +582,7 @@
 					</div>
 				</div>
 			</div> <!-- .clients -->
-			<div class="blog">
+			<div id="blog" class="blog">
 				<div class="container">
 					<div class="blog__info info">
 						<div class="blog__subtitle subtitle">Our stories</div>
@@ -650,12 +653,13 @@
 					</div>
 				</div> <!-- .map-->
 			</div> <!-- .logos-->
-			<div class="end">
+			<div id="contact" class="end">
 				<div class="container">
 					<div class="end__row">
 						<div class="end__item end__item-left">
 							<div class="end__left-logo">MoGo</div>
-							<div class="end__left-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							<div class="end__left-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+								sed do
 								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -670,16 +674,20 @@
 								<div class="end__a">
 									<a href="#"><img class="left-img" src="assets/fonts/footer-youtube.png" alt=""></a>
 									<a href="#"><img class="left-img" src="assets/fonts/footer-dribbble.png" alt=""></a>
-									<a href="#"><img class="left-img" src="assets/fonts/footer-google_plus.png" alt=""></a>
-									<a href="#"><img class="left-img" src="assets/fonts/footer-pinterest.png" alt=""></a>
+									<a href="#"><img class="left-img" src="assets/fonts/footer-google_plus.png"
+											alt=""></a>
+									<a href="#"><img class="left-img" src="assets/fonts/footer-pinterest.png"
+											alt=""></a>
 									<a href="#"><img class="left-img" src="assets/fonts/footer-facebook.png" alt=""></a>
 									<a href="#"><img class="left-img" src="assets/fonts/footer-tumblr.png" alt=""></a>
 									<a href="#"><img class="left-img" src="assets/fonts/footer-twitter.png" alt=""></a>
-									<a href="#"><img class="left-img" src="assets/fonts/footer-instagram.png" alt=""></a>
+									<a href="#"><img class="left-img" src="assets/fonts/footer-instagram.png"
+											alt=""></a>
 								</div>
 							</div>
 							<form action="">
-								<input class="input" type="text" placeholder="Your Email..."><input class="input input-submit"type="submit" value="subscribe">
+								<input class="input" type="text" placeholder="Your Email..."><input
+									class="input input-submit" type="submit" value="subscribe">
 							</form>
 						</div>
 						<div class="end__item end__item-middle">
@@ -736,8 +744,8 @@
 			</div>
 		</div> <!-- .content -->
 	</div> <!-- .wrapper -->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/script.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
