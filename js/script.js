@@ -74,26 +74,13 @@ blog.addEventListener("click", () => {
 	navMenu.classList.remove("active");
 })
 
-const wt1 = document.getElementById("wt-1");
-const wt2 = document.getElementById("wt-2");
-const wt3 = document.getElementById("wt-3");
-
-const scroll1 = document.getElementById("scroll-help1");
-const scroll2 = document.getElementById("scroll-help2");
-const scroll3 = document.getElementById("scroll-help3");
+const arrow = document.querySelectorAll(".what__title");
+const scroll = document.querySelectorAll(".scrollbar-helper");
 
 
-wt1.addEventListener("click", () => {
-	wt1.classList.toggle("hide");
-	scroll1.classList.toggle("hidden");
-})
-
-wt2.addEventListener("click", () => {
-	wt2.classList.toggle("hide");
-	scroll2.classList.toggle("hidden");
-})
-
-wt3.addEventListener("click", () => {
-	wt3.classList.toggle("hide");
-	scroll3.classList.toggle("hidden");
-})
+for (let i = 0; i < arrow.length; i++) {
+	arrow[i].addEventListener("click", () => {
+		arrow[i].classList.toggle("hide");
+		scroll[i].classList.toggle("hidden");
+	});
+}
